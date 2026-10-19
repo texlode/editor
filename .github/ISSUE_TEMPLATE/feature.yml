@@ -1,6 +1,6 @@
 name: Feature request
 description: Something you would like texlode to do that it does not do today.
-labels: ["enhancement"]
+type: Feature
 body:
   - type: markdown
     attributes:

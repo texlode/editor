@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in texlode shows or builds differently from what LaTeX would give you.
+description: Something in texlode shows or builds wrong, or differently from LaTeX.
 labels: ["bug"]
 body:
   - type: markdown

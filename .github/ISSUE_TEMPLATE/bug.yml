@@ -1,6 +1,6 @@
 name: Bug report
 description: Something in texlode shows or builds wrong, or differently from LaTeX.
-labels: ["bug"]
+type: Bug
 body:
   - type: markdown
     attributes:

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Differences from LaTeX
+    url: https://www.texlode.com/guides/latex-differences/
+    about: Some LaTeX behaves differently in texlode on purpose. Check this guide before reporting a difference.
+  - name: Ideas and questions
+    url: https://github.com/texlode/editor/discussions
+    about: Talk an idea through or ask how to do something.

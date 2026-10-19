@@ -1,0 +1,25 @@
+name: Feature request
+description: Something you would like texlode to do that it does not do today.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the [open issues](https://github.com/texlode/editor/issues) first. If yours is there, add a 👍 to it instead of opening a new one. To talk an idea through first, use [Discussions](https://github.com/texlode/editor/discussions).
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do
+      description: The task, not the solution. For example, "send each chapter to a different reviewer".
+    validations:
+      required: true
+  - type: textarea
+    id: obstacle
+    attributes:
+      label: What gets in the way today
+    validations:
+      required: true
+  - type: textarea
+    id: wish
+    attributes:
+      label: How you would like it to work

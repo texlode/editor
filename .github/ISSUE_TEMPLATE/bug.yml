@@ -1,0 +1,66 @@
+name: Bug report
+description: Something in texlode shows or builds differently from what LaTeX would give you.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the [open issues](https://github.com/texlode/editor/issues) first. If yours is there, add a 👍 to it instead of opening a new one.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and any error message, word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add \usepackage{...} to the preamble.
+        2. Put the source below into a chapter.
+        3. Look at it in the Print View.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Minimal LaTeX source
+      description: The smallest piece of source that shows the problem. Leave out anything private.
+      render: latex
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: For example, what lualatex prints for the same source.
+    validations:
+      required: true
+  - type: dropdown
+    id: project-type
+    attributes:
+      label: Project type
+      options:
+        - Book
+        - Monograph
+        - Paper
+        - Proceedings
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where it shows
+      multiple: true
+      options:
+        - Print View
+        - Source editor
+        - Download PDF
+        - Full typesetting run
+        - E-book (EPUB)
+        - Word export
+        - Import
+        - Other
+    validations:
+      required: true
